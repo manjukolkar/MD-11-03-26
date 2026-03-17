@@ -1,2 +1,1 @@
-branch ref
- I am learning Git and commands
+git new branch
