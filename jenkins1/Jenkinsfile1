@@ -27,6 +27,11 @@ agent any
                 sh "free -h"
             }
         }
+        stage('disk utilization'){
+            steps{
+                sh "df -kh"
+            }
+        }
     }
 }
     
