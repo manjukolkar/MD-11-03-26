@@ -1,0 +1,33 @@
+pipeline {
+    agent any 
+
+    stages{
+        stage('Server Details'){
+            steps{
+                echo "We are printing server details"
+            }
+
+        }
+        stage('Host Name'){
+            steps{
+                sh "hostname"
+            }
+        }
+        stage('IP Address'){
+            steps{
+                sh 'hostname -I'
+            }
+        }
+        stage ('listing CPU Details'){
+            steps {
+                sh "lscpu"
+            }
+        }
+        stage ('Memory uage'){
+            steps{
+                sh "free -h"
+            }
+        }
+    }
+
+}
