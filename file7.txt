@@ -1,1 +1,2 @@
 Random test
+ssh method
